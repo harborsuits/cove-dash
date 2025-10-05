@@ -7,7 +7,13 @@ import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import Leads from "./pages/Leads";
 import Demos from "./pages/Demos";
-import ComingSoon from "./pages/ComingSoon";
+import Outreach from "./pages/Outreach";
+import Messages from "./pages/Messages";
+import Projects from "./pages/Projects";
+import Sales from "./pages/Sales";
+import Schedule from "./pages/Schedule";
+import Analytics from "./pages/Analytics";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,13 +29,13 @@ const App = () => (
             <Route path="/" element={<Dashboard />} />
             <Route path="/leads" element={<Leads />} />
             <Route path="/demos" element={<Demos />} />
-            <Route path="/outreach" element={<ComingSoon title="Outreach Campaigns" description="Create and manage marketing campaigns" />} />
-            <Route path="/messages" element={<ComingSoon title="Messages" description="Communicate with your leads and clients" />} />
-            <Route path="/projects" element={<ComingSoon title="Projects" description="Track and manage client projects" />} />
-            <Route path="/sales" element={<ComingSoon title="Sales & Orders" description="Manage orders and invoices" />} />
-            <Route path="/schedule" element={<ComingSoon title="Schedule" description="Manage appointments and bookings" />} />
-            <Route path="/analytics" element={<ComingSoon title="Analytics" description="View detailed reports and insights" />} />
-            <Route path="/settings" element={<ComingSoon title="Settings" description="Configure your system" />} />
+            <Route path="/outreach" element={<Outreach />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/sales" element={<Sales />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/settings" element={<Settings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
